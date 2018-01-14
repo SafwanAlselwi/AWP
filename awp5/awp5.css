@@ -1,0 +1,14 @@
+usn,name,college,branch,year,email{
+	background-color:lightblue;
+	display:block;
+	font-style:italic;
+	font-size:14pt;
+	color:maroon;
+	margin-left:20px;
+}
+usn{
+	font-style:bold;
+	font-size:18pt;
+	color:blue;
+	margin-top:25px;
+}

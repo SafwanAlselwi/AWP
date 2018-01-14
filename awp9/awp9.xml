@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+	<student>
+		<age>33</age>
+		<name>Assaad</name>
+		<email>Brindavan</email>
+	</student>
+	
+	<student>
+		<age>33</age>
+		<name>Rafiq</name>
+		<email>Brindavan</email>
+	</student>
+	
+	<student>
+		<age>29</age>
+		<name>Safwan</name>
+		<email>Brindavan</email>
+	</student>
+</students>

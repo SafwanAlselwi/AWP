@@ -1,0 +1,21 @@
+<!--Program 13: Create a XHTML form with Name, Address Line 1, Address Line 2, and E-mail text fields. 
+On submitting, store the values in MySQL table. Retrieve and display the data based on Name.
+-->
+<html>
+	<h2>Store values</h2>
+	<form action="awp13insert.php">
+		Name:<input type="text" name="name" /><br/>
+		Address Line 1:<input type="text" name="addr1"/><br/>
+		Address Line 2:<input type="text" name="addr2"/><br/>
+		Email-ID:<input type="text" name="email"/><br/>
+		<input type="submit" value="Store"/>
+		<input type="reset" value="reset"/>
+	</form>
+	
+	<h2>Retrieve by name</h2>
+	<form action="awp13search.php">
+		Name:<input type="text" name="name" /><br/>
+		<input type="submit" value="Retrieve"/>
+		<input type="reset" value="reset"/>
+	</form>
+</html>

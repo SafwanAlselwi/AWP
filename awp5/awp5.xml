@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<?xml-stylesheet type="text/css" href="awp5.css" ?>
+<BU>
+	<student>
+		<usn>15DVSAC022</usn>
+		<name>Safwan Alselwi</name>
+		<college>Brindavan College</college>
+		<branch>MCA</branch>
+		<year>2017</year>
+		<email>saf1@xyz.com</email>
+	</student>
+	
+	<student>
+		<usn>15DVSAC017</usn>
+		<name>Assaad Lutf</name>
+		<college>Brindavan College</college>
+		<branch>MCA</branch>
+		<year>2017</year>
+		<email>Assaad@xyz.com</email>
+	</student>
+	
+	<student>
+		<usn>15DVSAC021</usn>
+		<name>Rafiq Abu Alfilat</name>
+		<college>Brindavan College</college>
+		<branch>MCA</branch>
+		<year>2017</year>
+		<email>Rafiq@xyz.com</email>
+	</student>
+</BU>

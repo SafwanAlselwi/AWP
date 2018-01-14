@@ -1,0 +1,50 @@
+<!-- Develop and demonstrate, using Javascript script, a XHTML document that contains three 
+short paragraphs of text, stacked on top of each other, with only enough of each showing so 
+that the mouse cursor can be placed over some part of them. When the cursor is placed over 
+the exposed part of any paragraph, it should rise to the top to become completely visible. -->
+<html>
+	<head>
+		<title>Stacked Paragraph</title>
+		<script type="text/javascript">
+			var oldTop='c1';
+			function totop(newTop){
+				document.getElementById(oldTop).style.zIndex="0";	
+				document.getElementById(newTop).style.zIndex="10";
+				oldTop=newTop;
+			}
+		</script>
+		<style type="text/css">
+			.p1{position:absolute;top:0px;left:0;z-index:3;background-color:green;border:2;border-style:dashed;}
+			.p2{position:absolute;top:50px;left:50px;z-index:2;background-color:maroon;border:2;border-style:dotted;}
+			.p3{position:absolute;top:100px;left:100px;z-index:1;background-color:purple;border:2;border-style:double;}
+		</style>
+	</head>
+	<body>
+	<p>
+		<p class="p1" id="c1" onmouseover="totop(this.id)">
+		aaaaaaaaaaaaaaa<br/>
+		aaaaaaaaaaaaaaa<br/>
+		aaaaaaaaaaaaaaa<br/>
+		aaaaaaaaaaaaaaa<br/>
+		aaaaaaaaaaaaaaa<br/>
+		aaaaaaaaaaaaaaa<br/>
+		</p>
+		<p class="p2" id="c2" onmouseover="totop(this.id)">
+		bbbbbbbbbbbbbb<br/>
+		bbbbbbbbbbbbbb<br/>
+		bbbbbbbbbbbbbb<br/>
+		bbbbbbbbbbbbbb<br/>
+		bbbbbbbbbbbbbb<br/>
+		bbbbbbbbbbbbbb<br/>
+		</p>
+		<p class="p3" id="c3" onmouseover="totop(this.id)">
+		ccccccccccccc<br/>
+		ccccccccccccc<br/>
+		ccccccccccccc<br/>
+		ccccccccccccc<br/>
+		ccccccccccccc<br/>
+		ccccccccccccc<br/>
+		</p>
+	</p>
+	</body>
+</html>

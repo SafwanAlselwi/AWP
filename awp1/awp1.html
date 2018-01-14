@@ -1,0 +1,25 @@
+<!-- Develop and demonstrate an XHTML file that includes Javascript script to generate first n Fibonacci numbers -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Fibonacci Series</title>
+		<script type="text/javascript">
+			function fib(){
+				var n=prompt("Enter the number of terms you want\n",0);
+				if (n<0 || isNaN(n))
+					alert("Entered Number must be positive");
+				else{
+					document.write("The first " +n+ " numbers of fibonacci are:");
+					var a=0,b=0,c=1;
+					for(i=1; i<=n; i++){
+						a = b;
+						b = c;
+						c = a + b;
+						document.write("<br/>"+a);
+					}
+				}
+			}	
+		</script>
+	</head>
+	<body onload="fib()">	
+	</body>
+</html>
